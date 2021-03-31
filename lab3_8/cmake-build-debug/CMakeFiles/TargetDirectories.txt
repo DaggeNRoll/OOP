@@ -1,0 +1,3 @@
+D:/repos/OOP/lab3_8/cmake-build-debug/CMakeFiles/lab3_8.dir
+D:/repos/OOP/lab3_8/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/repos/OOP/lab3_8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
