@@ -19,11 +19,11 @@ int main() {
         switch (op) {//разные формулы для разных математических операций
             case '+':
                 f3.numerator = f1.numerator * f2.denominator + f1.denominator * f2.numerator;
-                f3.denominator = f1.numerator * f2.denominator;
+                f3.denominator = f1.denominator * f2.denominator;
                 break;
             case '-':
                 f3.numerator = f1.numerator * f2.denominator - f1.denominator * f2.numerator;
-                f3.denominator = f1.numerator * f2.denominator;
+                f3.denominator = f1.denominator * f2.denominator;
                 break;
             case '*':
                 f3.numerator = f1.numerator * f2.numerator;
