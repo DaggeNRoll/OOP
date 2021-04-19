@@ -1,6 +1,4 @@
-cmake_minimum_required(VERSION 3.19)
-project(lab5)
-
+project(task6)
 set(CMAKE_CXX_STANDARD 20)
-
-add_executable(lab5 main.cpp)
+set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
+set(CMAKE_CXX_STANDARD_LIBRARIES "-static-libgcc -static-libstdc++ -lwsock32 -lws2_32 ${CMAKE_CSS_STANDARD_LIBRARIES}")
