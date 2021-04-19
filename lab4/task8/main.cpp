@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void swap(int& a, int& b){
+void swap(int& a, int& b){//функция, принимающая перемнные по ссылке
     int temp;
     temp=a;
     a=b;

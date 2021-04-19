@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-struct time{
+struct time{//Объявление структуры
     int h,m,s;
 };
 
-void swap(time& t1, time& t2){
+void swap(time& t1, time& t2){//функция, принимающая структурные переменные по ссылке
     time temp;
     temp = t1;
     t1=t2;
@@ -13,8 +13,8 @@ void swap(time& t1, time& t2){
 }
 
 int main() {
-    time t1,t2;
-    char waste;
+    time t1,t2;//объявление структурных переменных
+    char waste;//для игнорирования символа ":" во вводе
     cout << "Enter the first time:" << endl;
     cin >> t1.h >> waste >> t1.m >> waste >> t1.s;
     cout << "Enter the second time:" << endl;

@@ -7,7 +7,7 @@ struct fraction {
     int numerator, denominator;
 };//объявление структуры для хранения дробей
 
-fraction fadd(fraction, fraction);
+fraction fadd(fraction, fraction);//объявление функций структурного типа для разных операций
 
 fraction fsub(fraction, fraction);
 
@@ -16,7 +16,7 @@ fraction fmul(fraction, fraction);
 fraction fdiv(fraction, fraction);
 
 int main() {
-    fraction f1, f2, f3;
+    fraction f1, f2, f3;?/Обявление структурных переменных
     char waste, c = 'y';
     char op;
 
@@ -48,8 +48,8 @@ int main() {
     return 0;
 }
 
-fraction fadd(fraction f1, fraction f2) {
-    fraction f3;
+fraction fadd(fraction f1, fraction f2) {//иницализация функций для разных операций
+    fraction f3;//объявление локальнйо структурной переменной
     f3.numerator = f1.numerator * f2.denominator + f1.denominator * f2.numerator;
     f3.denominator = f1.denominator * f2.denominator;
     return f3;
