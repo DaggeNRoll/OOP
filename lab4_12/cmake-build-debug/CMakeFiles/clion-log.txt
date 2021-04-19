@@ -1,1 +1,0 @@
-CMakeLists.txt not found in D:\repos\OOP2\lab4_12 Select CMakeLists.txt
