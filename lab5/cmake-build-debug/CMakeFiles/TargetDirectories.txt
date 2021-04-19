@@ -1,3 +1,2 @@
-C:/Users/dagge/CLionProjects/OOP/lab5/cmake-build-debug/CMakeFiles/lab5.dir
-C:/Users/dagge/CLionProjects/OOP/lab5/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/dagge/CLionProjects/OOP/lab5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/repos/OOP2/lab5/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/repos/OOP2/lab5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
