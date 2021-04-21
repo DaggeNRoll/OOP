@@ -2,13 +2,13 @@
 
 using namespace std;
 
-class employee{
+class employee{//класс с полями int И float
     int id;
     float wage;
 public:
-    employee()
+    employee()//конструктор по-умолчанию
     {}
-    void input(){
+    void input(){//методы класса для ввода и вывода
         cout << "Enter id:" << endl;
         cin >> id;
         cout << "Enter wage:"<< endl;
@@ -19,14 +19,14 @@ public:
     }
 };
 int main() {
-    employee e1,e2,e3;
+    employee e1,e2,e3;//объявление объектов класса
     cout << "Enter an id and wage of the first employee:" << endl;
-    e1.input();
+    e1.input();//ввод полей объекта с помощью метода класса
     cout << "Enter an id and wage of the second employee:" << endl;
     e2.input();
     cout << "Enter an id and wage of the third employee:" << endl;
     e3.input();
-    e1.output();
+    e1.output();//вывод полей объекта с помощью метода класса
     e2.output();
     e3.output();
     return 0;
