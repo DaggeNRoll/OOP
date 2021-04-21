@@ -2,15 +2,17 @@
 
 using namespace std;
 
-enum etype{
-    manager,  junior, middle, senior
+enum etype {
+    manager, junior, middle, senior
 };
 
-class date{
-    int month,day,year;
+class date {
 public:
-    date(){}
-    void input(){
+    int month, day, year;
+
+    date() {}
+
+    void input() {
         cout << "Enter a month:" << endl;
         cin >> month;
         cout << "Enter a day:" << endl;
@@ -18,79 +20,76 @@ public:
         cout << "Enter a year:" << endl;
         cin >> year;
     }
-    void output()const{
-        cout << month << "/" << day << "/" << year << endl;
+
+    void output() {
+        cout << month << "/" << day << "/" << year << "." << endl;
     }
 };
 
-class employee{
+class employee {
     int id;
     float wage;
     date d;
-    etype position;
+    etype post;
 public:
-    employee()
-    {}
-    void getemploy(employee e){
-        cout << "Enter id:" << endl;
-        cin >> id;
-        cout << "Enter wage:"<< endl;
-        cin >> wage;
-        cout << "Enter the date of employment." << endl;
-        e.d.input();
+    employee() {}
 
-        char c;
-        cout << "Enter the first letter of the post (m = manager, j = junior, mid = middle, s = senior)." << endl;
-        cin >> c;
-        switch(c) {
+    void getemploy() {
+        cout << "Enter  worker's id and wage:" << endl;
+        cin >> id >> wage;
+        cout << "Enter the date of employment." << endl;
+        d.input();
+        cout << "Enter his(her) post (m = manager, j=junior, d = middle, s = senior:" << endl;
+        char ch;
+        cin >> ch;
+        switch (ch) {
             case 'm':
-                e.position = manager;
+                post = manager;
                 break;
             case 'j':
-                e.position = junior;
+                post = junior;
                 break;
-            case 'mid':
-                e.position = middle;
+            case 'd':
+                post = middle;
                 break;
             case 's':
-                e.position = senior;
+                post = senior;
                 break;
         }
     }
-    void putemploy()const{
-        cout << "The employee with the id \"" << id <<"\" started his(her) work at ";
+
+    void putemploy() {
+        cout << "An employee with the id \"" << id << "\" have been working here since ";
         d.output();
-        cout << "He(she) is a ";
-        switch(position){
+        cout << "He(she) works as a ";
+        switch (post) {
             case manager:
-                cout << "manager ";
+                cout << "manager";
                 break;
             case junior:
-                cout << "junior ";
+                cout << "junior";
                 break;
             case middle:
-                cout << "middle ";
+                cout << "middle";
                 break;
             case senior:
-                cout << "senior ";
+                cout << "senior";
                 break;
         }
-        cout << "and costs us " << wage << " money" << endl;
+        cout << " and costs us " << wage << " money." << endl;
     }
 };
 
-
-
 int main() {
-    employee e1,e2,e3;
-    cout <<"Tell me about the first employee." << endl;
-    e1.getemploy(e1);
-   // cout <<"Tell me about the second employee." << endl;
-    //e2.getemploy(e2);
-    //cout <<"Tell me about the third employee." << endl;
-    //e3.getemploy(e3);
+    employee e1, e2, e3;
+    cout << "Tell me about the first employee." << endl;
+    e1.getemploy();
+    cout << "Tell me about the second employee." << endl;
+    e2.getemploy();
+    cout << "Tell me about the third employee." << endl;
+    e3.getemploy();
     e1.putemploy();
-    //e2.putemploy();
-    //e3.putemploy();
+    e2.putemploy();
+    e3.putemploy();
     return 0;
 }
