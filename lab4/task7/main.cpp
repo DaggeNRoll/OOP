@@ -2,9 +2,9 @@
 #include <conio.h>
 
 using namespace std;
-
+//перегрузка функции для разных входных данных
 double power(float n, int p = 2) {
-    for (int i = 2; i <= p; i++) {
+    for (int i = 2; i <= p; i++) {//вычисление степени умножением
         n *= n;
     }
     return n;
@@ -37,7 +37,7 @@ int main() {
     int p;
     cout << "What type of n do you want to use? (f = float, i = integer, c = char, l = long)" << endl;
     cin >> op;
-    switch (op) {
+    switch (op) {//ветвление для разных типов данных
         case 'f':
             float n;
             cout << "Enter n: " << endl;

@@ -1,0 +1,3 @@
+C:/Users/dagge/CLionProjects/OOP/lab5/tsak11/cmake-build-debug/CMakeFiles/tsak11.dir
+C:/Users/dagge/CLionProjects/OOP/lab5/tsak11/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/dagge/CLionProjects/OOP/lab5/tsak11/cmake-build-debug/CMakeFiles/rebuild_cache.dir

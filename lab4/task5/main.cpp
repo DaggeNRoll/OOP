@@ -3,7 +3,7 @@
 
 using namespace std;
 
-long hms_to_secs(int,int,int);
+long hms_to_secs(int,int,int);//объявление функции
 
 int main(){
     int h,m,s;
@@ -17,7 +17,7 @@ int main(){
     return 0;
 }
 
-long hms_to_secs(int h,int m,int s){
+long hms_to_secs(int h,int m,int s){//инициализация
     s+=(h*60+m)*60;
-    return static_cast<long>(s);
+    return static_cast<long>(s);//преобразование в лонг
 }

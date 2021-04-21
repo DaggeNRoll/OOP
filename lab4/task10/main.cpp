@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int k=0;
+int k=0;//глобальная переменная - счётчик
 
 void f(){
     cout << "Hello world!" << endl;
