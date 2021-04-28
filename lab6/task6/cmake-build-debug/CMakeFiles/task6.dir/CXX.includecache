@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/dagge/CLionProjects/OOP/lab5/task6/main.cpp
+D:/repos/OOP2/lab6/task6/main.cpp
 iostream
+-
+cstdlib
+-
+ctime
 -
 
