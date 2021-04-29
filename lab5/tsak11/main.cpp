@@ -1,47 +1,47 @@
 #include <iostream>
-#include <conio.h>
+#include <conio.h>//для _getch()
 
 using namespace std;
 
-class fraction {
+class fraction {//структура со статической переменной int и тремя полями int
     static int counter;
     int numerator, denominator, id;
 
 public:
-    fraction() {
-        if (counter > 2) {
+    fraction() {//конструктор, инкрементирующий счётчик объектов и обнуляющий его, если их число становистя больше 3
+        if (counter > 2) {//(нужн одля удобного ввода
             counter = 0;
         } else {
             counter++;
         }
-        id = counter;
+        id = counter;//присваивание номера объекта
     }
 
-    char op;
+    char op;//открытое поле для математических операций
 
-    void input() {
+    void input() {//метод ввода
         cout << "Enter fraction " << id << ":" << endl;
-        char waste;
+        char waste;//для игнорирования "/"
         cin >> numerator >> waste >> denominator;
-        if (id % 2 != 0) {
+        if (id==1) {//для считывания математического действия (после первой дроби в выражении)
             cout << "Enter operator:" << endl;
             cin >> op;
         }
     }
 
-    void output() const {
+    void output() const {//константный метод вывода
         cout << "The answer is " << numerator << "/" << denominator << endl;
     }
 
-    void fadd(fraction, fraction);
+    void fadd(fraction, fraction);//метод сложения дробей
 
-    void fsub(fraction, fraction);
+    void fsub(fraction, fraction);//метод вычитания дробей
 
-    void fmul(fraction, fraction);
+    void fmul(fraction, fraction);//метод умножения дробей
 
-    void fdiv(fraction, fraction);
+    void fdiv(fraction, fraction);//метод деления дробей
 
-    void lowterms();
+    void lowterms();//метод для сокращения дробей
 
 };
 
@@ -99,12 +99,12 @@ void fraction::lowterms() // сокращение дроби
 
 
 int main() {
-    fraction f1, f2, f3;
+    fraction f1, f2, f3;//Объявление трёх объектов
     char ch = 'y';
     do {
-        f1.input();
+        f1.input();//ввод с помощью метода класса
         f2.input();
-        switch (f1.op) {
+        switch (f1.op) {//ветвление для разных математических операций
             case '+':
                 f3.fadd(f1, f2);
                 break;
@@ -118,8 +118,8 @@ int main() {
                 f3.fdiv(f1, f2);
                 break;
         }
-        f3.lowterms();
-        f3.output();
+        f3.lowterms();//сокращение результата
+        f3.output();//вывод с помощью метода класса
         cout << "Do you want to continue? (y/n)" << endl;
     } while (ch == _getch());
     return 0;

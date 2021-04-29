@@ -97,13 +97,13 @@ int main() {
 
     for (j = 0;j<52;j++){
         if (j>38){
-            deck4[j-13]=deck[j];
+            deck4[j-39]=deck[j];
         }
         else if(j>25){
             deck3[j-26]=deck[j];
         }
         else if(j>12){
-            deck2[j-39]=deck[j];
+            deck2[j-13]=deck[j];
         }
         else{
             deck1[j]=deck[j];

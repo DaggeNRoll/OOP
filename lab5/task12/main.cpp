@@ -4,19 +4,16 @@
 
 using namespace std;
 
-class fraction {
+class fraction {//класс из задания 11
 
     int numerator, denominator;
 
 public:
-    fraction(): numerator(0),denominator(0)
-    {}
+    fraction() : numerator(0), denominator(0) {}
 
-    fraction(int x): denominator(x)
-    {}
+    fraction(int x) : denominator(x) {}
 
-    fraction(int x, int y): numerator(x), denominator(y)
-    {}
+    fraction(int x, int y) : numerator(x), denominator(y) {}
 
 
     void input() {
@@ -27,9 +24,7 @@ public:
 
 
     void output(int length) const {
-        /*string frac = numerator + "/" + denominator;
-        cout << setw(length) << frac*/
-        cout << setw(length)  << numerator << "/" << denominator;
+        cout << setw(length) << numerator << "/" << denominator;
     }
 
     void fadd(fraction, fraction);
@@ -99,40 +94,38 @@ int main() {
     cout << "Enter denominator" << endl;
     cin >> denominator;
 
-int length=0;
-    int temp=denominator;
-    while(temp>0){
-        temp/=10;
+    int length = 0;//для величины отступа таблицы
+    int temp = denominator;
+    while (temp > 0) {
+        temp /= 10;
         length++;
     }
-    length*=10;
+    length *= 10;
     length++;
-    cout << setw(length) << " ";
-    for (int i=1; i<denominator;i++){
-        fraction f(i,denominator);
+    cout << setw(length) << " ";//вывод пустой ячейки
+    for (int i = 1; i < denominator; i++) {//вывод первой строки
+        fraction f(i, denominator);
         f.lowterms();
         f.output(length);
     }
     cout << endl;
-    for (int i=0;i<denominator;i++){
-        cout << setfill('-') << setw(length*2-2) << "";
+    for (int i = 0; i < denominator; i++) {//вывод границы между "шапкой" и таблицей
+        cout << setfill('-') << setw(length * 2 - 2) << "";
     }
     cout << setfill(' ') << endl;
-    for (int i=1;i<denominator;i++){
-        fraction fI(i,denominator);
-        for (int j=0;j<denominator;j++){
-            fraction fJ, fIJ;
-            if (j==0){
-                fraction fJ0(i,denominator);
+    for (int i = 1; i < denominator; i++) {
+        fraction fI(i, denominator);//множитель с первой строки
+        for (int j = 0; j < denominator; j++) {
+            fraction fIJ;//произведение
+            if (j == 0) {//вывод первого столбца
+                fraction fJ0(i, denominator);
                 fJ0.lowterms();
-                fJ=fJ0;
-                fJ.output(length);
-            }
-            else{
-                fraction fJ(j,denominator);
-                fIJ.fmul(fI,fJ);
-                fIJ.lowterms();
-                fIJ.output(length);
+                fJ0.output(length);
+            } else {//вычисление произведения
+                fraction fJ(j, denominator);
+                fIJ.fmul(fI, fJ);
+                fIJ.lowterms();//соскращение результата
+                fIJ.output(length);//вывод произведения
             }
         }
         cout << endl;
