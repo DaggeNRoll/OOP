@@ -8,10 +8,10 @@ class bMoney {
     long double sum;
     string ustring;
 public:
-    bMoney(){}
+    bMoney() {}
 
     bMoney(long double x, string s) {
-        sum=x;
+        sum = x;
         ustring = s;
     }
 
@@ -64,39 +64,39 @@ public:
 
 bMoney bMoney::operator+(bMoney m1) {
     bMoney temp;
-    temp.sum=sum+m1.sum;
+    temp.sum = sum + m1.sum;
     temp.Idtoms();
     return temp;
 }
 
 bMoney bMoney::operator-(bMoney m1) {
     bMoney temp;
-    temp.sum=sum-m1.sum;
+    temp.sum = sum - m1.sum;
     temp.Idtoms();
     return temp;
 }
 
 bMoney bMoney::operator*(long double x) {
     bMoney temp;
-    temp.sum=x*sum;
+    temp.sum = x * sum;
     temp.Idtoms();
     return temp;
 }
 
 long double bMoney::operator/(bMoney m1) {
-    return sum/m1.sum;
+    return sum / m1.sum;
 }
 
 bMoney bMoney::operator/(long double x) {
     bMoney temp;
-    temp.sum=sum/x;
+    temp.sum = sum / x;
     temp.Idtoms();
     return temp;
 }
 
 
 int main() {
-    bMoney m1, m2,m3;
+    bMoney m1, m2, m3;
     long double x;
     cout << "Enter the first sum of money:" << endl;
     m1.getmoney();
@@ -107,21 +107,21 @@ int main() {
     cout << "Enter long double value:" << endl;
     cin >> x;
 
-    m3 = m1+m2;
+    m3 = m1 + m2;
     cout << "m1 + m2 = ";
     m3.stringOutput();
 
-    m3=m1-m2;
+    m3 = m1 - m2;
     cout << "m1 - m2 = ";
     m3.stringOutput();
 
-    m3=m1*x;
+    m3 = m1 * x;
     cout << "m1 * x = ";
     m3.stringOutput();
 
-    cout << "m1 / m2 = " << m1/m2 << endl;
+    cout << "m1 / m2 = " << m1 / m2 << endl;
 
-    m3 = m1/x;
+    m3 = m1 / x;
     cout << "m1 / x = ";
     m3.stringOutput();
 
