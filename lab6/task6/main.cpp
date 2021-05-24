@@ -69,7 +69,7 @@ void card::display() {
 
 
 int main() {
-    card deck[52],deck1[12],deck2[12],deck3[12],deck4[12];
+    card deck[52],deck1[12],deck2[12],deck3[12],deck4[12];//колоды карт
     int j;
     cout << endl;
     for (j = 0; j < 52; j++) // создаем упорядоченную колоду карт
@@ -110,40 +110,32 @@ int main() {
         }
     }
 
-    cout << "First part of deck:" << endl;
+    cout << "First part of deck:" << endl;//вывод первой части колоды
     for (j=0;j<13; j++){
         deck1[j].display();
         cout << " ";
     }
     cout << endl;
 
-    cout << "Second part of deck:" << endl;
+    cout << "Second part of deck:" << endl;/второй части колоды
     for (j=0;j<13; j++){
         deck2[j].display();
         cout << " ";
     }
     cout << endl;
 
-    cout << "Third part of deck:" <<endl;
+    cout << "Third part of deck:" <<endl;//третьей части колоды
     for (j=0;j<13; j++){
         deck3[j].display();
         cout << " ";
     }
     cout << endl;
 
-    cout << "Fourth part of deck:" << endl;
+    cout << "Fourth part of deck:" << endl;//четвёртой части колоды
     for (j=0;j<13; j++){
         deck4[j].display();
         cout << " ";
     }
-    cout << endl;
-    /*// показываем перемешанную колоду
-    cout << "\nПеремешанная колода:\n";
-    for (j = 0; j < 52; j++) {
-        deck[j].display();
-        cout << " ";
-        if (!((j + 1) % 13)) // начинаем новую строку после каждой 13-й карты
-            cout << endl;
-    }*/
+
     return 0;
 }

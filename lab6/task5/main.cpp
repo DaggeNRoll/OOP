@@ -2,37 +2,37 @@
 
 using namespace std;
 
-int const n=3;
+int const n=3;//размер массива
 
-class fraction {
+class fraction {//класс для дробей
     int numerator, denominator;
 
 public:
     fraction(){}
 
-    void input() {
+    void input() {//ввод дроби
         cout << "Enter fraction: " << endl;
         char waste;
         cin >> numerator >> waste >> denominator;
 
     }
 
-    void output() const {
+    void output() const {//вывод дроби
         cout << "The answer is " << numerator << "/" << denominator << endl;
     }
 
-    void fadd(fraction, fraction);
+    void fadd(fraction, fraction);//сложение
 
-    void fsub(fraction, fraction);
+    void fsub(fraction, fraction);//вычитание
 
-    void fmul(fraction, fraction);
+    void fmul(fraction, fraction);//умножение
 
-    void fdiv(fraction, fraction);
+    void fdiv(fraction, fraction);//деление
 
-    void lowterms();
+    void lowterms();//сокращение
 
     void addN(){
-        denominator*=n;
+        denominator*=n;//вычисляет среднее, умножая знаменатель на количество дробей
     }
 
 };
@@ -88,19 +88,19 @@ void fraction::lowterms() // сокращение дроби
 }
 
 int main() {
-    fraction arr[n];
-    fraction average;
+    fraction arr[n];//массив дробей
+    fraction average;//среднее
     cout << "Enter fractions:" << endl;
-    for (int i =0;i<n;i++){
+    for (int i =0;i<n;i++){//ввод дробей в массив
         arr[i].input();
     }
-    average=arr[0];
+    average=arr[0];//инициализация среднего первой дробью (для дальнейшего сложения)
     for (int i=1;i<n;i++){
-        average.fadd(average,arr[i]);
+        average.fadd(average,arr[i]);//сложение всех дробей
     }
-    average.addN();
-    average.lowterms();
-    average.output();
+    average.addN();//деление на количество
+    average.lowterms();//сокращение
+    average.output();//вывод среднего
 
     return 0;
 }
