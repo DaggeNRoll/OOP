@@ -3,32 +3,33 @@
 
 using namespace std;
 
-class coords{
+class coords {
 public:
-    float x,y;
-    coords(){}
+    float x, y;
 
-    coords(float a, float b){
-        x=a;
-        y=b;
+    coords() {}
+
+    coords(float a, float b) {
+        x = a;
+        y = b;
     }
 
-    coords operator+(coords c2){
-        return coords(x+c2.x,y+c2.y);
+    coords operator+(coords c2) {
+        return coords(x + c2.x, y + c2.y);
     }
 };
 
-class polar{
-    float r,f;
+class polar {
+    float r, f;
 public:
-    polar(){}
+    polar() {}
 
-    polar(float x, float y){
-        r=x;
-        f=y;
+    polar(float x, float y) {
+        r = x;
+        f = y;
     }
 
-    void input(){
+    void input() {
         cout << "Enter coords" << endl;
         cout << "radius = ";
         cin >> r;
@@ -37,29 +38,29 @@ public:
         cout << endl;
     };
 
-    void output()const{
+    void output() const {
         cout << "Coords:" << endl;
         cout << "Radius = " << r << endl;
         cout << "Angle = " << f << endl;
     }
 
-    polar operator+(polar p2){
+    polar operator+(polar p2) {
         coords temp1, temp2, temp3;
-        temp1.x=r*cos(f);
-        temp1.y=r*sin(f);
-        temp2.x=p2.r*(cos(p2.f));
-        temp2.y=p2.r*(cos(p2.f));
-        temp3=temp1+temp2;
-        return polar(sqrt(temp3.x*temp3.x+temp3.y*temp3.y), atan(temp3.y/temp3.x));
+        temp1.x = r * cos(f);
+        temp1.y = r * sin(f);
+        temp2.x = p2.r * (cos(p2.f));
+        temp2.y = p2.r * (cos(p2.f));
+        temp3 = temp1 + temp2;
+        return polar(sqrt(temp3.x * temp3.x + temp3.y * temp3.y), atan(temp3.y / temp3.x));
     }
 };
 
-int main(){
-    polar a,b,c;
+int main() {
+    polar a, b, c;
     a.input();
     b.input();
 
-    c=a+b;
+    c = a + b;
     c.output();
 
     return 0;
