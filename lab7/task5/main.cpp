@@ -5,31 +5,31 @@ using namespace std;
 class time {
     int hours, minutes, seconds;
 public:
-    time() {
+    time() {//конструктор по-умолчанию
         hours = 0;
         minutes = 0;
         seconds = 0;
     }
 
-    time(int x, int y, int z) {
+    time(int x, int y, int z) {//конструктор с тремя аргументами
         hours = x;
         minutes = y;
         seconds = z;
     }
 
-    void output() const {
+    void output() const {//вывод
         cout << hours << ":" << minutes << ":" << seconds << endl;
     }
 
-    time operator+(time);
+    time operator+(time);//перегрузка операции +
 
-    time operator++();
+    time operator++();//перегрузка префиксного инкремента
 
-    time operator++(int);
+    time operator++(int);//перегрузка постфиксного инкремента
 
-    time operator--();
+    time operator--();//перегрузка префексного декремента
 
-    time operator--(int);
+    time operator--(int);//перегрузка постфиксного декремента
 
 };
 

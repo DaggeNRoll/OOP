@@ -49,17 +49,17 @@ public:
 
     void lowterms(fraction);
 
-    fraction operator+(fraction);
+    fraction operator+(fraction);//перегрузка +
 
-    fraction operator-(fraction);
+    fraction operator-(fraction);//перегрузка -
 
-    fraction operator*(fraction);
+    fraction operator*(fraction);//перегрузка *
 
-    fraction operator/(fraction);
+    fraction operator/(fraction);//перегрузка делить
 
-    bool operator==(fraction);
+    bool operator==(fraction);//перегрузка операции равно
 
-    bool operator!=(fraction);
+    bool operator!=(fraction);//перегрузка операции неравно
 
 };
 
@@ -127,7 +127,7 @@ int main() {
         f1.input();//ввод с помощью метода класса
         f2.input();
         if (f1 == check || f1 == check2 || f1 == check3 || f1 == check4 ||
-            f2 == check || f2 == check2 || f2 == check3 || f2 == check4) {
+            f2 == check || f2 == check2 || f2 == check3 || f2 == check4) {//проверка на правильность введённой дроби
             cout << "Bad data format!" << endl;
             exit(1);
         }

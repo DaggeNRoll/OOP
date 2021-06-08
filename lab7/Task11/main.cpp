@@ -7,9 +7,9 @@ class sterling {
     int shillings, pence;
 
 public:
-    sterling() {}
+    sterling() {}//конструктор по-умолчанию
 
-    sterling(double x) {
+    sterling(double x) {//конструктор, который переводит из double в sterling
         pence = static_cast<int>(x * 20 * 12);
         shillings = pence / 12;
         pence %= 12;
@@ -17,7 +17,7 @@ public:
         shillings %= 20;
     }
 
-    sterling(long x, int y, int z) {
+    sterling(long x, int y, int z) { //конструктор с тремя аргументами
         pounds = x;
         shillings = y;
         pence = z;
@@ -32,31 +32,31 @@ public:
         cout << "Answer is £" << pounds << "." << shillings << "." << pence << endl;
     }
 
-    explicit operator double() const {
+    explicit operator double() const {//для явного преобразования из sterling в double
         return pounds + (shillings * 12 + pence) / (20 * 12);
     }
 
-    sterling operator+(sterling st2) {
+    sterling operator+(sterling st2) {//перегрузка sterling+sterling
         sterling temp(pounds,shillings,pence);
         return sterling(double(temp)+double(st2));
     }
 
-    sterling operator-(sterling st2) {
+    sterling operator-(sterling st2) {//перегрузка sterling-sterling
         sterling temp(pounds,shillings,pence);
         return sterling(double(temp) - double(st2));
     }
 
-    sterling operator*(double x) {
+    sterling operator*(double x) {//перегрузка sterling*double
         sterling temp(pounds,shillings,pence);
         return sterling(double(temp)*x);
     }
 
-    sterling operator/(sterling st2) {
+    sterling operator/(sterling st2) {//перегрузка sterling/sterling
         sterling temp(pounds,shillings,pence);
         return sterling(double(temp)/double(st2));
     }
 
-    sterling operator/(double x) {
+    sterling operator/(double x) {//перегрузка sterling/double
         sterling temp(pounds,shillings,pence);
         return sterling(double(temp)/x);
     }

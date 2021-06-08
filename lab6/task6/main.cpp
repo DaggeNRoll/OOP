@@ -117,7 +117,7 @@ int main() {
     }
     cout << endl;
 
-    cout << "Second part of deck:" << endl;/второй части колоды
+    cout << "Second part of deck:" << endl;//второй части колоды
     for (j=0;j<13; j++){
         deck2[j].display();
         cout << " ";

@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/repos/OOP2/lab8/task4/main.cpp
+C:/Users/dagge/CLionProjects/OOP/lab8/task4/main.cpp
 iostream
 -
 string
+-
+limits
+-
+ios
 -
 

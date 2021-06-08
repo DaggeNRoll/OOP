@@ -9,13 +9,13 @@ private:
     int arr[LIMIT];
     int max,min;
 public:
-    safearray(int x, int y){
+    safearray(int x, int y){//конструктоо с двумя аргументами для пользовательских пределов
         min=x;
         max=y;
     }
 
     // обратите внимание, что функция возвращает ссылку!
-    int& operator[](int n)
+    int& operator[](int n)//перегрузка []
     {
         if(n < min || n >= max)
         { cout << "\nОшибочный индекс!"; exit(1); }

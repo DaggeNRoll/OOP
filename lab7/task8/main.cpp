@@ -8,9 +8,9 @@ class bMoney {
     long double sum;
     string ustring;
 public:
-    bMoney() {}
+    bMoney() {}//конструктор по умолчанию
 
-    bMoney(long double x, string s) {
+    bMoney(long double x, string s) {//конструктор с двумя аргументами
         sum = x;
         ustring = s;
     }
@@ -50,15 +50,15 @@ public:
     }
 
 
-    bMoney operator+(bMoney);
+    bMoney operator+(bMoney);//перегрузка bMoney+bMoney
 
-    bMoney operator-(bMoney);
+    bMoney operator-(bMoney);//перегрузка bMoney-bMoney
 
-    bMoney operator*(long double);
+    bMoney operator*(long double);//перегрузка bMoney/long double
 
-    long double operator/(bMoney);
+    long double operator/(bMoney);//перегрузка long double/bMoney
 
-    bMoney operator/(long double);
+    bMoney operator/(long double);//перегрузка bMoney/long double
 
 };
 
