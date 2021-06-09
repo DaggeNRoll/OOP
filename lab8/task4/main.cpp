@@ -77,7 +77,7 @@ public:
 
     void putdata()const{
         publication::putdata();
-        std::cout << "This type is " << "minutes long" << std::endl;
+        std::cout << "This type is " << time <<"minutes long" << std::endl;
         sales::putdata();
     }
 };
