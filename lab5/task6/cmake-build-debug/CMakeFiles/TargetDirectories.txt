@@ -1,0 +1,3 @@
+D:/repos/OOP2/lab5/task6/cmake-build-debug/CMakeFiles/task6.dir
+D:/repos/OOP2/lab5/task6/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/repos/OOP2/lab5/task6/cmake-build-debug/CMakeFiles/rebuild_cache.dir

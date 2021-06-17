@@ -1,0 +1,3 @@
+C:/Users/dagge/CLionProjects/OOP/lab7/task8/cmake-build-debug/CMakeFiles/task8.dir
+C:/Users/dagge/CLionProjects/OOP/lab7/task8/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/dagge/CLionProjects/OOP/lab7/task8/cmake-build-debug/CMakeFiles/rebuild_cache.dir

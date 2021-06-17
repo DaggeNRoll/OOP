@@ -1,3 +1,0 @@
-D:/repos/OOP/lab3_12/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/repos/OOP/lab3_12/cmake-build-debug/CMakeFiles/lab3_12.dir
-D:/repos/OOP/lab3_12/cmake-build-debug/CMakeFiles/edit_cache.dir
