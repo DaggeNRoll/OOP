@@ -57,19 +57,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\repos\OOP2\lab7\task12
+CMAKE_SOURCE_DIR = C:\Users\dagge\CLionProjects\OOP\lab7\Task12
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\repos\OOP2\lab7\task12\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ CMAKE_BINARY_DIR = D:\repos\OOP2\lab7\task12\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -98,9 +98,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\repos\OOP2\lab7\task12\cmake-build-debug\CMakeFiles D:\repos\OOP2\lab7\task12\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug\CMakeFiles C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\repos\OOP2\lab7\task12\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,17 +129,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named task12
+# Target rules for targets named Task12
 
 # Build rule for target.
-task12: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 task12
-.PHONY : task12
+Task12: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Task12
+.PHONY : Task12
 
 # fast build rule for target.
-task12/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task12.dir\build.make CMakeFiles/task12.dir/build
-.PHONY : task12/fast
+Task12/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Task12.dir\build.make CMakeFiles/Task12.dir/build
+.PHONY : Task12/fast
 
 main.obj: main.cpp.obj
 
@@ -147,7 +147,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task12.dir\build.make CMakeFiles/task12.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Task12.dir\build.make CMakeFiles/Task12.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -156,7 +156,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task12.dir\build.make CMakeFiles/task12.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Task12.dir\build.make CMakeFiles/Task12.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -165,7 +165,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task12.dir\build.make CMakeFiles/task12.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Task12.dir\build.make CMakeFiles/Task12.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -176,7 +176,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... task12
+	@echo ... Task12
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

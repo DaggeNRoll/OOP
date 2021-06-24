@@ -53,25 +53,25 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\repos\OOP2\lab7\task12
+CMAKE_SOURCE_DIR = C:\Users\dagge\CLionProjects\OOP\lab7\Task12
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\repos\OOP2\lab7\task12\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/task12.dir/all
+all: CMakeFiles/Task12.dir/all
 
 .PHONY : all
 
@@ -81,36 +81,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/task12.dir/clean
+clean: CMakeFiles/Task12.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/task12.dir
+# Target rules for target CMakeFiles/Task12.dir
 
 # All Build rule for target.
-CMakeFiles/task12.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task12.dir\build.make CMakeFiles/task12.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task12.dir\build.make CMakeFiles/task12.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\repos\OOP2\lab7\task12\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target task12"
-.PHONY : CMakeFiles/task12.dir/all
+CMakeFiles/Task12.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Task12.dir\build.make CMakeFiles/Task12.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Task12.dir\build.make CMakeFiles/Task12.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Task12"
+.PHONY : CMakeFiles/Task12.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/task12.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\repos\OOP2\lab7\task12\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/task12.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\repos\OOP2\lab7\task12\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/task12.dir/rule
+CMakeFiles/Task12.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Task12.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Task12.dir/rule
 
 # Convenience name for target.
-task12: CMakeFiles/task12.dir/rule
+Task12: CMakeFiles/Task12.dir/rule
 
-.PHONY : task12
+.PHONY : Task12
 
 # clean rule for target.
-CMakeFiles/task12.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task12.dir\build.make CMakeFiles/task12.dir/clean
-.PHONY : CMakeFiles/task12.dir/clean
+CMakeFiles/Task12.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Task12.dir\build.make CMakeFiles/Task12.dir/clean
+.PHONY : CMakeFiles/Task12.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

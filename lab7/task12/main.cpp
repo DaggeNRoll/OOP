@@ -31,7 +31,7 @@ public:
     }
 
     void putSterling() const {
-        cout << "Answer is ?" << pounds << "." << shillings << "." << pence << endl;
+        cout << "Answer is ВЈ" << pounds << "." << shillings << "." << pence << endl;
     }
 
     explicit operator double() const {
@@ -77,7 +77,7 @@ public:
         ustring = s;
     }
 
-    bMoney(sterling m1){//конструктор для преобраования из sterling в bMoney
+    bMoney(sterling m1){
         sum=double(m1)*50;
     }
 
@@ -107,11 +107,11 @@ public:
         }
     }
 
-    void stringOutput() const {//вывод
+    void stringOutput() const {//РІС‹РІРѕРґ
         cout << "The answer is " << ustring << endl;
     }
 
-    void getmoney() {//ввод
+    void getmoney() {//РІРІРѕРґ
         getline(cin, ustring);
     }
 
@@ -126,7 +126,7 @@ public:
 
     bMoney operator/(long double);
 
-    explicit operator sterling();//явное преобразование из bMoney в sterling
+    explicit operator sterling();
 
 };
 

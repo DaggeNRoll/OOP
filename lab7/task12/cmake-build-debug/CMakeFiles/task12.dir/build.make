@@ -52,67 +52,67 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\repos\OOP2\lab7\task12
+CMAKE_SOURCE_DIR = C:\Users\dagge\CLionProjects\OOP\lab7\Task12
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\repos\OOP2\lab7\task12\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug
 
 # Include any dependencies generated for this target.
-include CMakeFiles/task12.dir/depend.make
+include CMakeFiles/Task12.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/task12.dir/progress.make
+include CMakeFiles/Task12.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/task12.dir/flags.make
+include CMakeFiles/Task12.dir/flags.make
 
-CMakeFiles/task12.dir/main.cpp.obj: CMakeFiles/task12.dir/flags.make
-CMakeFiles/task12.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\repos\OOP2\lab7\task12\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task12.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task12.dir\main.cpp.obj -c D:\repos\OOP2\lab7\task12\main.cpp
+CMakeFiles/Task12.dir/main.cpp.obj: CMakeFiles/Task12.dir/flags.make
+CMakeFiles/Task12.dir/main.cpp.obj: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Task12.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Task12.dir\main.cpp.obj -c C:\Users\dagge\CLionProjects\OOP\lab7\Task12\main.cpp
 
-CMakeFiles/task12.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task12.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\repos\OOP2\lab7\task12\main.cpp > CMakeFiles\task12.dir\main.cpp.i
+CMakeFiles/Task12.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Task12.dir/main.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dagge\CLionProjects\OOP\lab7\Task12\main.cpp > CMakeFiles\Task12.dir\main.cpp.i
 
-CMakeFiles/task12.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task12.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\repos\OOP2\lab7\task12\main.cpp -o CMakeFiles\task12.dir\main.cpp.s
+CMakeFiles/Task12.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Task12.dir/main.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dagge\CLionProjects\OOP\lab7\Task12\main.cpp -o CMakeFiles\Task12.dir\main.cpp.s
 
-# Object files for target task12
-task12_OBJECTS = \
-"CMakeFiles/task12.dir/main.cpp.obj"
+# Object files for target Task12
+Task12_OBJECTS = \
+"CMakeFiles/Task12.dir/main.cpp.obj"
 
-# External object files for target task12
-task12_EXTERNAL_OBJECTS =
+# External object files for target Task12
+Task12_EXTERNAL_OBJECTS =
 
-task12.exe: CMakeFiles/task12.dir/main.cpp.obj
-task12.exe: CMakeFiles/task12.dir/build.make
-task12.exe: CMakeFiles/task12.dir/linklibs.rsp
-task12.exe: CMakeFiles/task12.dir/objects1.rsp
-task12.exe: CMakeFiles/task12.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\repos\OOP2\lab7\task12\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable task12.exe"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\task12.dir\link.txt --verbose=$(VERBOSE)
+Task12.exe: CMakeFiles/Task12.dir/main.cpp.obj
+Task12.exe: CMakeFiles/Task12.dir/build.make
+Task12.exe: CMakeFiles/Task12.dir/linklibs.rsp
+Task12.exe: CMakeFiles/Task12.dir/objects1.rsp
+Task12.exe: CMakeFiles/Task12.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Task12.exe"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Task12.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/task12.dir/build: task12.exe
+CMakeFiles/Task12.dir/build: Task12.exe
 
-.PHONY : CMakeFiles/task12.dir/build
+.PHONY : CMakeFiles/Task12.dir/build
 
-CMakeFiles/task12.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles\task12.dir\cmake_clean.cmake
-.PHONY : CMakeFiles/task12.dir/clean
+CMakeFiles/Task12.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles\Task12.dir\cmake_clean.cmake
+.PHONY : CMakeFiles/Task12.dir/clean
 
-CMakeFiles/task12.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\repos\OOP2\lab7\task12 D:\repos\OOP2\lab7\task12 D:\repos\OOP2\lab7\task12\cmake-build-debug D:\repos\OOP2\lab7\task12\cmake-build-debug D:\repos\OOP2\lab7\task12\cmake-build-debug\CMakeFiles\task12.dir\DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/task12.dir/depend
+CMakeFiles/Task12.dir/depend:
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\dagge\CLionProjects\OOP\lab7\Task12 C:\Users\dagge\CLionProjects\OOP\lab7\Task12 C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug C:\Users\dagge\CLionProjects\OOP\lab7\Task12\cmake-build-debug\CMakeFiles\Task12.dir\DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/Task12.dir/depend
 
