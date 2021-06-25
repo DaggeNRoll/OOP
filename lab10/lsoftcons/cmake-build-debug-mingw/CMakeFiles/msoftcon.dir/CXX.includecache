@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/repos/OOP/lab10/lsoftcons/main.cpp
+
+D:/repos/OOP/lab10/lsoftcons/msoftcon.cpp
+msoftcon.h
+D:/repos/OOP/lab10/lsoftcons/msoftcon.h
+
+D:/repos/OOP/lab10/lsoftcons/msoftcon.h
+windows.h
+-
+conio.h
+-
+math.h
+-
+
